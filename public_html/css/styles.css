@@ -1,0 +1,1184 @@
+body 
+{
+    background-color: #eee;
+}
+
+#central
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#form_top
+{
+    margin-top: 0px;
+    height: 50px;    
+}
+
+#form_titulo
+{
+    float :left;   
+    margin-left: 10px;      
+    width:264px;                                      /*largura*/
+    height: 50px;                                     /*altura*/            
+}
+
+#form_close
+{
+    width: 25px;                                      /*largura*/
+    height: 25px;                                      /*altura*/
+    /* position :relative;      */
+    /* margin:0px auto;             */
+     float:right; 
+    margin-right :0px;   
+}
+
+#search
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#loader
+{
+    width: 226px;                                  /*largura*/
+    height: 113px;                                  /*altura*/    
+    border-radius: 10px;    
+    /* background-color: #000000;     */
+    background-color: #000000;        
+    text-align: center;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+
+#loader p
+{
+    margin-top: 34px;      
+    font-size: 35px; 
+    color: #fffefe;   
+}
+
+#message
+{
+    width: 400px;                                  /*largura*/
+    height: 113px;                                  /*altura*/    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;  
+    display: none;       
+}
+
+#form_message
+{
+    max-width: 400px;
+ } 
+
+#form_message_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_message_botao
+{
+    margin-top: 20px;
+}  
+
+#menu_exit
+{
+    display: none;
+}
+
+#menu_login
+{
+    display: block;
+}
+
+/* Login begin */
+
+#form_login
+{
+    max-width: 600px;
+ } 
+
+#form_login_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_login_botao
+{
+    margin-top: 20px;
+}  
+
+/* login end */
+
+/* rest cliente begin */
+
+#form_rest_client
+{
+    max-width: 600px;
+} 
+
+#form_rest_client_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_rest_client_botao
+{
+    margin-top: 20px;
+} 
+
+/* rest client end */
+
+/* remote access begin */
+
+#form_remote_access
+{
+    max-width: 600px;
+} 
+
+#form_remote_access_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_remote_access_botao
+{
+    margin-top: 20px;
+} 
+
+/* remote access end */
+
+/* user registration begin */
+
+#form_user
+{
+    max-width: 700px;
+} 
+
+#form_user_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_user_botao
+{
+    margin-top: 20px;
+} 
+
+#form_user_check
+{
+    margin-top: 20px;
+}
+
+/* user registration end */
+
+/* user_search registration begin */
+
+#form_user_search
+{
+    max-width: 700px;
+} 
+
+#form_user_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_user_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_user_search_check
+{
+    margin-top: 20px;
+}
+
+#form_user_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* user_search search registration end */
+
+/* user search result registration begin */
+
+#form_user_search_result
+{
+    max-width: 700px;
+} 
+
+#form_user_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_user_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_user_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_user_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* user_search search registration end */
+
+/* timeline begin */
+
+#form_timeline_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_timeline
+{
+    max-width: 700px;
+} 
+
+#form_timeline_botao
+{
+    margin-top: 20px;
+} 
+
+#form_timeline_check
+{
+    margin-top: 20px;
+}
+
+#form_timeline_search_result_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;  
+} 
+
+#form_timeline_search_result
+{
+    max-width: 700px;
+} 
+
+/* timeline registration end */
+
+#form_timeline_detail_history
+{
+    height: 500px;
+}
+
+/* team registration begin */
+
+#form_team
+{
+    max-width: 700px;
+} 
+
+#form_team_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_team_botao
+{
+    margin-top: 20px;
+} 
+
+#form_team_check
+{
+    margin-top: 20px;
+}
+
+/* team registration end */
+
+/* team_search registration begin */
+
+#form_team_search
+{
+    max-width: 700px;
+} 
+
+#form_team_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_team_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_team_search_check
+{
+    margin-top: 20px;
+}
+
+#form_team_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* team_search search registration end */
+
+/* team search result registration begin */
+
+#form_team_search_result
+{
+    max-width: 700px;
+} 
+
+#form_team_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_team_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_team_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_team_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* team_search search registration end */
+
+/* controller registration begin */
+
+#form_controller
+{
+    max-width: 700px;
+} 
+
+#form_controller_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_controller_botao
+{
+    margin-top: 20px;
+} 
+
+#form_controller_check
+{
+    margin-top: 20px;
+}
+
+/* controller registration end */
+
+/* controller_search registration begin */
+
+#form_controller_search
+{
+    max-width: 700px;
+} 
+
+#form_controller_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_controller_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_controller_search_check
+{
+    margin-top: 20px;
+}
+
+#form_controller_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* controller_search search registration end */
+
+/* controller search result registration begin */
+
+#form_controller_search_result
+{
+    max-width: 700px;
+} 
+
+#form_controller_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_controller_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_controller_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_controller_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* controller_search search registration end */
+
+/* team_user registration begin */
+
+#form_team_user
+{
+    max-width: 700px;
+} 
+
+#form_team_user_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_team_user_botao
+{
+    margin-top: 20px;
+} 
+
+#form_team_user_check
+{
+    margin-top: 20px;
+}
+
+/* team_user registration end */
+
+/* team_user_search registration begin */
+
+#form_team_user_search
+{
+    max-width: 700px;
+} 
+
+#form_team_user_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_team_user_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_team_user_search_check
+{
+    margin-top: 20px;
+}
+
+#form_team_user_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* team_user_search search registration end */
+
+/* team_user search result registration begin */
+
+#form_team_user_search_result
+{
+    max-width: 700px;
+} 
+
+#form_team_user_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_team_user_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_team_user_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_team_user_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* team_user_search search registration end */
+
+/* authorization registration begin */
+
+#form_authorization_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_authorization
+{
+    max-width: 700px;
+} 
+
+#form_authorization_botao
+{
+    margin-top: 20px;
+} 
+
+#form_authorization_check
+{
+    margin-top: 20px;
+}
+
+#form_authorization_search_result_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;  
+} 
+
+#form_authorization_search_result
+{
+    max-width: 700px;
+} 
+
+/* authorization_search search registration end */
+
+/* firewall registration begin */
+
+#form_firewall_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_firewall
+{
+    max-width: 700px;
+} 
+
+#form_firewall_botao
+{
+    margin-top: 20px;
+} 
+
+#form_firewall_check
+{
+    margin-top: 20px;
+}
+
+#form_firewall_search_result_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;  
+} 
+
+#form_firewall_search_result
+{
+    max-width: 700px;
+} 
+
+/* firewall_search search registration end */
+
+/* team firewall registration begin */
+
+#form_team_firewall_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_team_firewall
+{
+    max-width: 700px;
+} 
+
+#form_team_firewall_botao
+{
+    margin-top: 20px;
+} 
+
+#form_team_firewall_check
+{
+    margin-top: 20px;
+}
+
+#form_team_firewall_search_result_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;  
+} 
+
+#form_team_firewall_search_result
+{
+    max-width: 700px;
+} 
+
+/* team_firewall_search search registration end */
+
+/* team controller registration begin */
+
+#form_team_controller_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_team_controller
+{
+    max-width: 700px;
+} 
+
+#form_team_controller_botao
+{
+    margin-top: 20px;
+} 
+
+#form_team_controller_check
+{
+    margin-top: 20px;
+}
+
+#form_team_controller_search_result_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;  
+} 
+
+#form_team_controller_search_result
+{
+    max-width: 700px;
+} 
+
+/* team_controller_search search registration end */
+
+/* user new access begin */
+
+#form_user_new_access
+{
+    max-width: 600px;
+ } 
+
+#form_user_new_access_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_user_new_access_botao
+{
+    margin-top: 20px;
+}  
+
+/* user new access end */
+
+/* person_category registration begin */
+
+#form_person_category
+{
+    max-width: 700px;
+} 
+
+#form_person_category_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_person_category_botao
+{
+    margin-top: 20px;
+} 
+
+#form_person_category_check
+{
+    margin-top: 20px;
+}
+
+/* person_category registration end */
+
+/* person_category_search registration begin */
+
+#form_person_category_search
+{
+    max-width: 700px;
+} 
+
+#form_person_category_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_person_category_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_person_category_search_check
+{
+    margin-top: 20px;
+}
+
+#form_person_category_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* person_category_search search registration end */
+
+/* person_category search result registration begin */
+
+#form_person_category_search_result
+{
+    max-width: 700px;
+} 
+
+#form_person_category_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_person_category_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_person_category_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_person_category_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* person_category_search search registration end */
+
+/* person_category registration begin */
+
+#form_person_question
+{
+    max-width: 700px;
+} 
+
+#form_person_question_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_person_question_botao
+{
+    margin-top: 20px;
+} 
+
+#form_person_question_check
+{
+    margin-top: 20px;
+}
+
+/* person_question registration end */
+
+/* person_question_search registration begin */
+
+#form_person_question_search
+{
+    max-width: 700px;
+} 
+
+#form_person_question_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_person_question_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_person_question_search_check
+{
+    margin-top: 20px;
+}
+
+#form_person_question_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* person_question_search search registration end */
+
+/* person_question search result registration begin */
+
+#form_person_question_search_result
+{
+    max-width: 700px;
+} 
+
+#form_person_question_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_person_question_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_person_question_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_person_question_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* person_question_search search registration end */
+
+
+/* employer_category registration begin */
+
+#form_employer_category
+{
+    max-width: 700px;
+} 
+
+#form_employer_category_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_employer_category_botao
+{
+    margin-top: 20px;
+} 
+
+#form_employer_category_check
+{
+    margin-top: 20px;
+}
+
+/* employer_category registration end */
+
+/* employer_category_search registration begin */
+
+#form_employer_category_search
+{
+    max-width: 700px;
+} 
+
+#form_employer_category_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_employer_category_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_employer_category_search_check
+{
+    margin-top: 20px;
+}
+
+#form_employer_category_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* employer_category_search search registration end */
+
+/* employer_category search result registration begin */
+
+#form_employer_category_search_result
+{
+    max-width: 700px;
+} 
+
+#form_employer_category_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_employer_category_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_employer_category_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_employer_category_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* employer_category_search search registration end */
+
+/* employer_category registration begin */
+
+#form_employer_question
+{
+    max-width: 700px;
+} 
+
+#form_employer_question_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_employer_question_botao
+{
+    margin-top: 20px;
+} 
+
+#form_employer_question_check
+{
+    margin-top: 20px;
+}
+
+/* employer_question registration end */
+
+/* employer_question_search registration begin */
+
+#form_employer_question_search
+{
+    max-width: 700px;
+} 
+
+#form_employer_question_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_employer_question_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_employer_question_search_check
+{
+    margin-top: 20px;
+}
+
+#form_employer_question_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* employer_question_search search registration end */
+
+/* employer_question search result registration begin */
+
+#form_employer_question_search_result
+{
+    max-width: 700px;
+} 
+
+#form_employer_question_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_employer_question_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_employer_question_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_employer_question_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* employer_question_search search registration end */
+
+
+/* build_products registration begin */
+
+#form_build_products
+{
+    max-width: 700px;
+} 
+
+#form_build_products_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_build_products_botao
+{
+    margin-top: 20px;
+} 
+
+#form_build_products_check
+{
+    margin-top: 20px;
+}
+
+/* build_products registration end */
+
+/* build_products_search registration begin */
+
+#form_build_products_search
+{
+    max-width: 700px;
+} 
+
+#form_build_products_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_build_products_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_build_products_search_check
+{
+    margin-top: 20px;
+}
+
+#form_build_products_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* build_products_search search registration end */
+
+/* build_products search result registration begin */
+
+#form_build_products_search_result
+{
+    max-width: 700px;
+} 
+
+#form_build_products_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_build_products_search_result_botao
+{
+    margin-top: 20px;
+} 
+
+#form_build_products_search_result_check
+{
+    margin-top: 20px;
+}
+
+#form_build_products_search_result_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+/* build_products_search search registration end */
