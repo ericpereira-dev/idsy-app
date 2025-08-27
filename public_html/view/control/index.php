@@ -157,11 +157,13 @@
   <?php echo '<script> var config ={api: "'.$config["api"].'",img: "'.$config["img"].'"} </script>'?>
   <?php echo '<script src="'.$config["js"].'bootstrap/bootstrap.min.js?v=1"></script>'?>  
   <!-- fim obrigatório -->
+
+  <!-- comum -->  
+  <?php echo '<script src="'.$config["js"].'call/common/client.login.simple.js?v=2"></script>'?>           
+  <?php echo '<script src="'.$config["js"].'call/common/client.login.js?v=7"></script>'?>           
+  <?php echo '<script src="'.$config["js"].'call/common/user.new.access.js?v=10"></script>'?>
+  <!-- fim comum -->  
          
-  <?php echo '<script src="'.$config["js"].'call/control/client.login.simple.js?v=2"></script>'?>           
-  <?php echo '<script src="'.$config["js"].'call/control/client.login.js?v=7"></script>'?>           
-  <?php echo '<script src="'.$config["js"].'call/control/client.rest.test.js?v=5"></script>'?>           
-  <?php echo '<script src="'.$config["js"].'call/control/remote.access.js?v=4"></script>'?>                 
   <?php echo '<script src="'.$config["js"].'call/control/user.js?v=4"></script>'?>           
   <?php echo '<script src="'.$config["js"].'call/control/user.search.js?v=4"></script>'?>           
   <?php echo '<script src="'.$config["js"].'call/control/timeline.js?v=11"></script>'?>           
@@ -176,7 +178,7 @@
   <?php echo '<script src="'.$config["js"].'call/control/firewall.js?v=11"></script>'?>                 
   <?php echo '<script src="'.$config["js"].'call/control/team.firewall.js?v=3"></script>'?>             
   <?php echo '<script src="'.$config["js"].'call/control/team.controller.js?v=2"></script>'?>               
-  <?php echo '<script src="'.$config["js"].'call/control/user.new.access.js?v=10"></script>'?>               
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 </body>
