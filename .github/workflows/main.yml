@@ -29,5 +29,5 @@ jobs:
           username: ${{ secrets.HOSTINGER_USER }}
           password: ${{ secrets.HOSTINGER_PASSWORD}}
           port: 65002
-          source: public_html/view/registroartistico/*
+          source: public_html/view/registroartistico//**/*
           target: /home/u331460685/domains/app.registroartistico.com.br/public_html/     
