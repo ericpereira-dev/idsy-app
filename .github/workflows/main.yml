@@ -2,8 +2,8 @@ name: scp files to hostinger
 on: [push]
 jobs:
 
-  build:
-    name: Build
+  deploy-control:
+    name: Control
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -16,3 +16,18 @@ jobs:
         port: 65002
         source: "."
         target: /home/u331460685/domains/app.idsy.com.br/
+
+  deploy-registroartistico:
+      name: RegistroArtistico
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v4
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          password: ${{ secrets.HOSTINGER_PASSWORD}}
+          port: 65002
+          source: "idsy-app/public_html/view/registroartistico/"
+          target: /home/u331460685/domains/app.registroartistico.com.br/        
