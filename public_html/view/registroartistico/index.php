@@ -33,7 +33,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>              
-              <li onclick=controllerView()>
+              <li onclick=pessoaView()>
                 <a class="dropdown-item" href="#">Dados Pessoais</a>
               </li>              
               <li>
@@ -85,6 +85,8 @@
   <div id="search">   
   </div>  
   <div id="central">   
+
+
   </div>  
   <div id="message" class="position-absolute">
     <div class="container">
@@ -97,7 +99,7 @@
                 <div class="form-group">
                   <div id="form_message_text">                    
                   </div>
-                </div>
+                </div>  
               </div>
               <div id="form_message_botao">
                 <button onclick=hideMessage() type="submit" class="btn btn-primary">OK</button>
@@ -129,6 +131,9 @@
   <?php echo '<script src="'.$config["js"].'call/common/user.new.access.js?v=10"></script>'?>
   <!-- fim comum -->    
          
+  <!-- Registro Artistico -->  
+  <?php echo '<script src="'.$config["js"].'call/registroartistico/pessoa.js?v=2"></script>'?>           
+  <!-- fim Registro Artistico -->      
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

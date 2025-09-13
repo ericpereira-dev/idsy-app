@@ -1,0 +1,103 @@
+body 
+{
+    background-color: #eee;
+}
+
+#central
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#form_top
+{
+    margin-top: 0px;
+    height: 50px;    
+}
+
+#form_titulo
+{
+    float :left;   
+    margin-left: 10px;      
+    width:264px;                                      /*largura*/
+    height: 50px;                                     /*altura*/            
+}
+
+#form_close
+{
+    width: 25px;                                      /*largura*/
+    height: 25px;                                      /*altura*/
+    /* position :relative;      */
+    /* margin:0px auto;             */
+     float:right; 
+    margin-right :0px;   
+}
+
+#search
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#loader
+{
+    width: 226px;                                  /*largura*/
+    height: 113px;                                  /*altura*/    
+    border-radius: 10px;    
+    /* background-color: #000000;     */
+    background-color: #000000;        
+    text-align: center;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+
+#loader p
+{
+    margin-top: 34px;      
+    font-size: 35px; 
+    color: #fffefe;   
+}
+
+#message
+{
+    width: 400px;                                  /*largura*/
+    height: 113px;                                  /*altura*/    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;  
+    display: none;       
+}
+
+#form_message
+{
+    max-width: 400px;
+ } 
+
+#form_message_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_message_botao
+{
+    margin-top: 20px;
+}  
+
+#menu_exit
+{
+    display: none;
+}
+
+#menu_login
+{
+    display: block;
+}
+
