@@ -59,10 +59,10 @@
             </ul>
           </li>                              
           <li id="menu_login" class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo $config["source"].'login.php'; ?>">Login</a>
+            <a class="nav-link active" aria-current="page" href="<?php echo $config["source"].'login.php'; ?>">Entrar</a>
           </li>
           <li id="menu_exit" onclick=loginExit() class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Logout</a>
+            <a class="nav-link active" aria-current="page" href="#">Sair</a>
           </li>          
         </ul>
       </div>

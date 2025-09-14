@@ -68,20 +68,20 @@ function clientLoginSimpleSend()
     request(requestedModel);
 }
 
-var clientLoginSimpleResponse = function (e_request)
+var clientLoginSimpleResponse = async function (e_request)
 {   
     hideLoader();    
 
     if (e_request.resultCode != 200)
     {
-        showMessage(e_request.result);                
+        showMessage(e_request.result);             
     }
     else
     {           
-        document.getElementById('menu_exit').style.display = 'block';            
-        document.getElementById('menu_login').style.display = 'none'; 
-        localStorage.setItem('token', e_request.result);       
-        window.location.href = localStorage.getItem('source');
-        showMessage('Acesso liberado!');
+        localStorage.setItem('token', e_request.result); 
+        // await showMessage('Acesso liberado!');  
+        // await sleep(2000);
+    
+        window.location.href = localStorage.getItem('source'); 
     }
 }

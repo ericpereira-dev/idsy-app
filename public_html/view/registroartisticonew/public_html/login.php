@@ -5,8 +5,6 @@
 <body>
     <?php require "../templates/menu.php" ?>
     <?php require "../templates/body.php" ?>
-    <div id="search">   
-    </div>  
     <div id="central">     
         <div class="container">
             <div id="form_login_center" class="row justify-content-center align-items-center">

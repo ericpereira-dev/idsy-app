@@ -18,7 +18,8 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() 
     {
-        localStorage.setItem("form_active", document.getElementById('central'));     
-        centralActive();
+        // localStorage.setItem("form_active", document.getElementById('central'));     
+        // centralActive();
+        updateScreen();
     });
   </script>

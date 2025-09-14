@@ -18,66 +18,24 @@ class RequestedModel
     }
 }
 
-function form_active_set(valeu)
-{
-    if (valeu==true)
-    {   
-        v_form_active = localStorage.getItem("form_active");
-        v_form_active.style.display = 'block';
-    }
-    else
-    {
-        v_form_active = localStorage.getItem("form_active");        
-        v_form_active.style.display = 'none';
-    }
-} 
-
-function centralActive()
-{
-    document.getElementById('search').style.display = 'none';        
-    document.getElementById('central').style.display = 'block';  
-    $('.navbar-collapse').collapse('hide');    
-}
-
-function centralClear()
-{
-    document.getElementById('central').innerHTML = '';
-}
-
-function searchActive()
-{
-    document.getElementById('search').style.display = 'block';        
-    document.getElementById('central').style.display = 'none';
-}
-
-function searchClear()
-{
-    localStorage.setItem("form_active", document.getElementById('central'));  
-    document.getElementById('search').innerHTML = '';
-    centralActive();
-}
-
 function showLoader()
 {
     document.body.style.backgroundColor = '#c3c0c0';
     document.getElementById('loader').style.display = 'block';
-    document.getElementById('central').style.display = 'none';   
-    document.getElementById('search').style.display = 'none';                    
+    document.getElementById('central').style.display = 'none';
 }
 
 function hideLoader()
 { 
     document.body.style.backgroundColor = '#eee';    
-    document.getElementById('loader').style.display = 'none'; 
-    v_form_active = localStorage.getItem("form_active");       
-    v_form_active.style.display = 'block';                                   
+    document.getElementById('loader').style.display = 'none';
+    document.getElementById('central').style.display = 'block';                            
 }
 
-function showMessage(e_message)
+async function showMessage(e_message)
 {
     document.getElementById('loader').style.display = 'none';   
     document.getElementById('central').style.display = 'none';   
-    document.getElementById('search').style.display = 'none';           
     document.getElementById('form_message_text').innerText = e_message;  
     document.getElementById('message').style.display = 'block';         
 }
@@ -85,16 +43,40 @@ function showMessage(e_message)
 function hideMessage()
 {        
     document.getElementById('message').style.display = 'none'; 
-    v_form_active = localStorage.getItem("form_active");          
-    v_form_active.style.display = 'block';
+    document.getElementById('central').style.display = 'block';
 }
 
 function loginExit()
 {
     localStorage.removeItem('token');
     document.getElementById('menu_exit').style.display = 'none';            
-    document.getElementById('menu_login').style.display = 'block';        
-    centralClear();
-    searchClear();
+    document.getElementById('menu_login').style.display = 'block';
+    window.location.href = localStorage.getItem('source')+'login.php';
 }
 
+function updateScreen()
+{
+    if (localStorage.getItem('token') !== null) 
+    {
+        document.getElementById('menu_exit').style.display = 'block';            
+        document.getElementById('menu_login').style.display = 'none';        
+    } 
+    else 
+    {
+        document.getElementById('menu_exit').style.display = 'none';            
+        document.getElementById('menu_login').style.display = 'block'; 
+        
+        if (window.location.href !== localStorage.getItem('source')+'login.php')
+        {
+            window.location.href = localStorage.getItem('source')+'login.php';            
+        }
+    }    
+}
+
+function verificaLogin()
+{
+    if (localStorage.getItem('token') == null) and 
+    {
+        window.location.href = localStorage.getItem('source')+'login.php';    
+    }
+}

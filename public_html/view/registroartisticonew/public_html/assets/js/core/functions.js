@@ -174,3 +174,8 @@ function resizeAndConvertToBase64(file, maxWidth = 800, callback)
 
     reader.readAsDataURL(file);
 }
+
+function sleep(ms) 
+{
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
