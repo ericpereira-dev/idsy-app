@@ -1,6 +1,6 @@
 <?php require "../Config.php" ?>
 <?php require "../templates/header.php" ?>
-<?php echo '<link rel="stylesheet" href="'. $config["assets"] . 'css/cadastro-usuario.css?v=1">' ?>
+<?php echo '<link rel="stylesheet" href="' . $config["assets"] . 'css/cadastro-usuario.css?v=1">' ?>
 
 <body>
     <?php require "../templates/menu.php" ?>
@@ -46,9 +46,11 @@
                                     </label>
                                 </div>
                             </div>
-                            <div id="form_user_new_access_botao">
-                                <button onclick="userNewAccessSend()" type="submit" class="btn btn-primary">Salvar</button>
-                                <button onclick="userNewAccessKeySend()" type="submit" class="btn btn-primary" style="margin-left: 5px" ;>Receber Chave</button>
+                            <div class="d-flex flex-column align-items-center gap-2 mt-4">
+                                <div class="d-flex gap-2">
+                                    <button onclick="userNewAccessSend()" type="submit" class="btn btn-secondary">Salvar</button>
+                                    <button onclick="userNewAccessKeySend()" type="submit" class="btn btn-secondary" style="margin-left: 5px" ;>Receber Chave</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -59,4 +61,4 @@
 </body>
 
 <?php require "../templates/footer.php" ?>
-<?php echo '<script src="' . $config["assets"] .'js/call/cadastro-usuario.js?v=1"></script>' ?>
+<?php echo '<script src="' . $config["assets"] . 'js/call/cadastro-usuario.js?v=1"></script>' ?>
