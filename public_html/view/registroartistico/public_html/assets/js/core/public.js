@@ -66,10 +66,12 @@ function updateScreen()
         document.getElementById('menu_exit').style.display = 'none';            
         document.getElementById('menu_login').style.display = 'block';         
 
-        if (window.location.href !== localStorage.getItem('source')+'login.php')
+        if ((window.location.href !== localStorage.getItem('source')+'login.php') && 
+            (window.location.href !== localStorage.getItem('source')+'cadastro_usuario.php'))
         {
             window.location.href = localStorage.getItem('source')+'login.php';            
         }
+        
         document.getElementById('central').style.display = 'block';  
     }
     else

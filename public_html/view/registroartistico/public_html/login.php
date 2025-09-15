@@ -1,11 +1,11 @@
 <?php require "../Config.php" ?>
 <?php require "../templates/header.php" ?>
-<?php echo '<link rel="stylesheet" href="'.$config["assets"].'css/login.css?v=1">'?>         
+<?php echo '<link rel="stylesheet" href="' . $config["assets"] . 'css/login.css?v=1">' ?>
 
 <body>
     <?php require "../templates/menu.php" ?>
     <?php require "../templates/body.php" ?>
-    <div id="central">     
+    <div id="central">
         <div class="container">
             <div id="form_login_center" class="row justify-content-center align-items-center">
                 <div id="form_login">
@@ -30,10 +30,12 @@
                                     <input type="number" class="form-control" id="form_login_chave" required autocomplete="off">
                                 </div>
                             </div>
-                            <div id="form_login_botao">
-                                <button onclick="clientLoginSimpleSend()" type="submit" class="btn btn-primary">Entrar</button>
-                                <button onclick="clientKeySimpleSend()" type="submit" class="btn btn-primary" style="margin-left: 5px">Receber Chave</button>
-                                <button onclick="updateScreen()" type="submit" class="btn btn-primary" style="margin-left: 5px">Esqueceu a Senha?</button>
+                            <div class="d-flex flex-column align-items-center gap-2 mt-4">
+                                <div class="d-flex gap-2">
+                                    <button onclick="clientLoginSimpleSend()" type="submit" class="btn btn-primary">Entrar</button>
+                                    <button onclick="clientKeySimpleSend()" type="submit" class="btn btn-secondary">Receber Chave</button>
+                                </div>
+                                <a href="<?php echo $config["source"] . 'cadastro_usuario.php' ?>" class="btn btn-success" style="margin-left: 5px">Esqueceu a Senha ou Novo Usuário!</a>
                             </div>
                         </div>
                     </div>
@@ -44,4 +46,4 @@
 </body>
 
 <?php require "../templates/footer.php" ?>
-<?php echo '<script src="'.$config["assets"].'js/call/login.js?v=1"></script>'?>
+<?php echo '<script src="' . $config["assets"] . 'js/call/login.js?v=1"></script>' ?>
