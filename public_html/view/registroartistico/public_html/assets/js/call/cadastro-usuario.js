@@ -5,13 +5,13 @@ function userNewAccessKeySend()
     var v_authentication = 
     {        
         email: document.getElementById("form_user_new_access_email").value,
-        team: vg_team
+        team: localStorage.getItem('team')
     }      
 
     class RequestedModel{};
     const requestedModel                      = new RequestedModel();
     requestedModel.device                     = '';      
-    requestedModel.url                        = config.api;
+    requestedModel.url                        = localStorage.getItem('api');;
     requestedModel.controller                 = 'USER_NEW_PASSWORD_TOKEN'; 
     requestedModel.method                     = 'POST'; 
     requestedModel.publicDataType             = 'json';      
@@ -49,13 +49,13 @@ function userNewAccessSend()
       password: document.getElementById("form_user_new_access_password").value,      
       email: document.getElementById("form_user_new_access_email").value,
       token: document.getElementById("form_user_new_access_token").value,      
-      team: vg_team
+      team: localStorage.getItem('team')
   }      
 
   class RequestedModel{};
   const requestedModel                      = new RequestedModel();
   requestedModel.device                     = '';      
-  requestedModel.url                        = config.api;
+  requestedModel.url                        = localStorage.getItem('api');;
   requestedModel.controller                 = 'USER_NEW_PASSWORD'; 
   requestedModel.method                     = 'POST'; 
   requestedModel.publicDataType             = 'json';      

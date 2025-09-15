@@ -13,8 +13,8 @@
               Cadastro
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <li onclick=userNewAccessView()>
-                <a class="nav-link active" aria-current="page" href="<?php echo $config["source"].'cadastro_usuario.php'; ?>">Usuário</a>
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro_usuario.php'?>">Usuário</a>
               </li>
               <li>
                 <hr class="dropdown-divider">
@@ -59,7 +59,7 @@
             </ul>
           </li>                              
           <li id="menu_login" class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo $config["source"].'login.php'; ?>">Entrar</a>
+            <a class="nav-link active" aria-current="page" href="<?php echo $config["source"].'login.php'?>">Entrar</a>
           </li>
           <li id="menu_exit" onclick=loginExit() class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Sair</a>

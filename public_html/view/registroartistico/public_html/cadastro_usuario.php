@@ -1,6 +1,6 @@
 <?php require "../Config.php" ?>
 <?php require "../templates/header.php" ?>
-<?php echo '<link rel="stylesheet" href="' . $config["assets"] . 'css/login.css?v=1">' ?>
+<?php echo '<link rel="stylesheet" href="'. $config["assets"] . 'css/cadastro-usuario.css?v=1">' ?>
 
 <body>
     <?php require "../templates/menu.php" ?>
@@ -14,9 +14,6 @@
                             <div id="form_top">
                                 <div id="form_titulo">
                                     <h5 class="card-title">Incluir ou Alterar Usuário</h5>
-                                </div>
-                                <div id="form_close" onclick="centralClear()">
-                                    <img src="config.imgclose.png">
                                 </div>
                             </div>
                             <div class="form-row">
@@ -62,4 +59,4 @@
 </body>
 
 <?php require "../templates/footer.php" ?>
-<?php echo '<script src="' . $config["assets"] . 'js/call/cadastro-usuario.js?v=1"></script>' ?>
+<?php echo '<script src="' . $config["assets"] .'js/call/cadastro-usuario.js?v=1"></script>' ?>
