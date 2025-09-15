@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.HOSTINGER_PASSWORD}}
           port: 65002
           source: "public_html/view/registroartistico/*"
-          target: "/home/u331460685/domains/app.registroartistico.com.br/public_html/"
+          target: "/home/u331460685/domains/app.registroartistico.com.br/"
           overwrite: true
           strip_components: 3   # <-- remove os 3 níveis do path (public_html/view/registroartistico)
           debug: true
