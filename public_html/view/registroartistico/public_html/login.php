@@ -32,10 +32,10 @@
                             </div>
                             <div class="d-flex flex-column align-items-center gap-2 mt-4">
                                 <div class="d-flex gap-2">
-                                    <button onclick="clientLoginSimpleSend()" type="submit" class="btn btn-primary">Entrar</button>
+                                    <button onclick="clientLoginSimpleSend()" type="submit" class="btn btn-secondary">Entrar</button>
                                     <button onclick="clientKeySimpleSend()" type="submit" class="btn btn-secondary">Receber Chave</button>
                                 </div>
-                                <a href="<?php echo $config["source"] . 'cadastro_usuario.php' ?>" class="btn btn-success" style="margin-left: 5px">Esqueceu a Senha ou Novo Usuário!</a>
+                                <a href="<?php echo $config["source"] . 'cadastro_usuario.php' ?>" class="btn btn-secondary" style="margin-left: 5px">Esqueceu a Senha ou Novo Usuário!</a>
                             </div>
                         </div>
                     </div>
