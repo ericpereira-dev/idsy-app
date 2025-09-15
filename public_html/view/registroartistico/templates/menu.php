@@ -14,7 +14,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li onclick=userNewAccessView()>
-                <a class="dropdown-item" href="#">Usuário</a>
+                <a class="nav-link active" aria-current="page" href="<?php echo $config["source"].'cadastro_usuario.php'; ?>">Usuário</a>
               </li>
               <li>
                 <hr class="dropdown-divider">

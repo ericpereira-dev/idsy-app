@@ -56,27 +56,28 @@ function loginExit()
 
 function updateScreen()
 {
-    if (localStorage.getItem('token') !== null) 
-    {
-        document.getElementById('menu_exit').style.display = 'block';            
-        document.getElementById('menu_login').style.display = 'none';        
-    } 
-    else 
+    hoje = new Date();
+    dia = hoje.getDate().toString();   
+
+    if ((localStorage.getItem('token') == null) || 
+        (localStorage.getItem('token_date') == null) ||
+        (localStorage.getItem('token_date') !== dia))
     {
         document.getElementById('menu_exit').style.display = 'none';            
-        document.getElementById('menu_login').style.display = 'block'; 
-        
+        document.getElementById('menu_login').style.display = 'block';         
+
         if (window.location.href !== localStorage.getItem('source')+'login.php')
         {
             window.location.href = localStorage.getItem('source')+'login.php';            
         }
-    }    
+        document.getElementById('central').style.display = 'block';  
+    }
+    else
+    {
+        document.getElementById('menu_exit').style.display = 'block';            
+        document.getElementById('menu_login').style.display = 'none'; 
+        document.getElementById('central').style.display = 'block';                         
+    } 
 }
 
-function verificaLogin()
-{
-    if (localStorage.getItem('token') == null) and 
-    {
-        window.location.href = localStorage.getItem('source')+'login.php';    
-    }
-}
+

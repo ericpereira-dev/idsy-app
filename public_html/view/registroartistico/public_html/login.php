@@ -19,21 +19,21 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Login</label>
-                                    <input type="text" class="form-control" id="form_login_usuario">
+                                    <input type="text" class="form-control" id="form_login_usuario" required>
                                 </div>
                                 <div class="form-group" style="margin-top: 10px">
                                     <label>Senha</label>
-                                    <input type="password" class="form-control" id="form_login_senha">
+                                    <input type="password" class="form-control" id="form_login_senha" required>
                                 </div>
                                 <div class="form-group" style="margin-top: 10px">
                                     <label>Chave</label>
-                                    <input type="number" class="form-control" id="form_login_chave" autocomplete="off">
+                                    <input type="number" class="form-control" id="form_login_chave" required autocomplete="off">
                                 </div>
                             </div>
                             <div id="form_login_botao">
                                 <button onclick="clientLoginSimpleSend()" type="submit" class="btn btn-primary">Entrar</button>
-                                <button onclick="clientKeySimpleSend()" type="submit" class="btn btn-primary" style="margin-left: 5px" ;>Receber Chave</button>
-                                <button onclick="userNewAccessView()" type="submit" class="btn btn-primary" style="margin-left: 5px" ;>Alterar Senha</button>
+                                <button onclick="clientKeySimpleSend()" type="submit" class="btn btn-primary" style="margin-left: 5px">Receber Chave</button>
+                                <button onclick="updateScreen()" type="submit" class="btn btn-primary" style="margin-left: 5px">Esqueceu a Senha?</button>
                             </div>
                         </div>
                     </div>

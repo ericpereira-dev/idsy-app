@@ -68,17 +68,20 @@ function clientLoginSimpleSend()
     request(requestedModel);
 }
 
-var clientLoginSimpleResponse = async function (e_request)
+var clientLoginSimpleResponse = function (e_request)
 {   
-    hideLoader();    
-
     if (e_request.resultCode != 200)
     {
+        hideLoader();            
         showMessage(e_request.result);             
     }
     else
-    {           
-        localStorage.setItem('token', e_request.result); 
+    {
+        hoje = new Date();
+        dia = hoje.getDate();
+        localStorage.setItem('token', e_request.result);
+        localStorage.setItem('token_date', dia.toString());
+        
         // await showMessage('Acesso liberado!');  
         // await sleep(2000);
     
