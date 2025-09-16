@@ -19,8 +19,8 @@
               <li>
                 <hr class="dropdown-divider">
               </li>              
-              <li onclick=pessoaView()>
-                <a class="dropdown-item" href="#">Dados Pessoais</a>
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro_pessoa.php'?>">Dados Pessoais</a>
               </li>              
               <li>
                 <hr class="dropdown-divider">

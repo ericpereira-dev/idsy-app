@@ -15,8 +15,10 @@
                   </div>
                 </div>
               </div>
-              <div id="form_message_botao">
-                <button onclick=hideMessage() type="submit" class="btn btn-primary">OK</button>
+              <div class="d-flex flex-column align-items-center gap-2 mt-4">              
+              <div class="d-flex gap-2">
+                <button onclick=hideMessage() type="submit" class="btn btn-secondary">OK</button>
+              </div>
               </div>
             </div>
           </div>

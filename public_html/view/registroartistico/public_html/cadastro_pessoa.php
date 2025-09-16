@@ -1,0 +1,102 @@
+<?php require "../Config.php" ?>
+<?php require "../templates/header.php" ?>
+<?php echo '<link rel="stylesheet" href="' . $config["assets"] . 'css/cadastro-pessoa.css?v=1">' ?>
+
+<body>
+    <?php require "../templates/menu.php" ?>
+    <?php require "../templates/body.php" ?>
+    <div id="central">
+        <div class="container">
+            <div id="form_pessoa_center" class="row justify-content-center align-items-center">
+                <div id="form_pessoa">
+                    <div class="card bg-light pb-4" style="border-radius: 25px;">
+                        <div class="card-body">
+                            <div id="form_top">
+                                <div id="form_titulo">
+                                    <h5 class="card-title">Dados Pessoais</h5>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <!-- Nome -->
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+                                </div>
+
+                                <!-- Celular -->
+                                <div class="mb-3">
+                                    <label for="celular" class="form-label">Celular</label>
+                                    <input type="tel" class="form-control" id="celular" placeholder="(99) 99999-9999" required>
+                                </div>
+
+                                <!-- Documento -->
+                                <div class="mb-3">
+                                    <label for="tipoDocumento" class="form-label">Tipo de Documento</label>
+                                    <select class="form-select" id="tipoDocumento" required>
+                                        <option value="">Selecione...</option>
+                                        <option value="cpf">CPF</option>
+                                        <option value="cnpj">CNPJ</option>
+                                        <option value="passaporte">Passaporte</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="documento" class="form-label">Número do Documento</label>
+                                    <input type="text" class="form-control" id="documento" placeholder="Digite o número" required>
+                                </div>
+
+                                <!-- Foto -->
+                                <div class="mb-3">
+                                    <label for="foto" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="foto" accept="image/*">
+                                    <img id="preview" alt="Pré-visualização da foto">
+                                </div>
+
+                                <!-- Redes sociais -->
+                                <div class="mb-3">
+                                    <label for="redes" class="form-label">Redes Sociais</label>
+                                    <textarea class="form-control" id="redes" rows="3" placeholder="Cole aqui os links de suas redes sociais"></textarea>
+                                </div>
+
+                                <!-- Curriculo -->
+                                <div class="mb-3">
+                                    <label for="curriculo" class="form-label">Currículo</label>
+                                    <textarea class="form-control" id="curriculo" rows="3" placeholder="Cole aqui seu currículo"></textarea>
+                                </div>
+                                
+                                <!-- Botões -->
+                                <div class="d-flex flex-column align-items-center gap-2 mt-4">
+                                    <div class="d-flex gap-2">
+                                        <button onclick="pessoaSend()" type="submit" class="btn btn-secondary">Salvar</button>
+                                        <button onclick="pessoaKeySend()" type="submit" class="btn btn-secondary" style="margin-left: 5px" ;>Receber Chave</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<?php require "../templates/footer.php" ?>
+<?php echo '<script src="' . $config["assets"] . 'js/call/cadastro-pessoa.js?v=1"></script>' ?>
+ <script>
+    // Preview da foto
+    const fotoInput = document.getElementById('foto');
+    const preview = document.getElementById('preview');
+
+    fotoInput.addEventListener('change', () => {
+      const file = fotoInput.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = e => {
+          preview.src = e.target.result;
+          preview.style.display = "block";
+        };
+        reader.readAsDataURL(file);
+      } else {
+        preview.style.display = "none";
+      }
+    });
+  </script>
