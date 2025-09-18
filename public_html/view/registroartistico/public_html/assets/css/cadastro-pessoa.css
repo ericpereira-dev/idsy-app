@@ -10,12 +10,7 @@
     margin-bottom: 15px;    
 } 
 
-#form_pessoa_botao
-{
-    margin-top: 20px;
-}  
-
-#preview 
+#form_pessoa_foto_preview
 {
     display: none;
     margin-top: 15px;

@@ -20,20 +20,19 @@
                                 <!-- Nome -->
                                 <div class="mb-3">
                                     <label for="nome" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+                                    <input type="text" class="form-control" id="form_pessoa_nome" placeholder="Digite seu nome completo" required>
                                 </div>
 
                                 <!-- Celular -->
                                 <div class="mb-3">
                                     <label for="celular" class="form-label">Celular</label>
-                                    <input type="tel" class="form-control" id="celular" placeholder="(99) 99999-9999" required>
+                                    <input type="tel" class="form-control" id="form_pessoa_celular" placeholder="(99) 99999-9999" required>
                                 </div>
 
                                 <!-- Documento -->
                                 <div class="mb-3">
                                     <label for="tipoDocumento" class="form-label">Tipo de Documento</label>
-                                    <select class="form-select" id="tipoDocumento" required>
-                                        <option value="">Selecione...</option>
+                                    <select class="form-select" id="form_pessoa_tipo_documento" required>
                                         <option value="cpf">CPF</option>
                                         <option value="cnpj">CNPJ</option>
                                         <option value="passaporte">Passaporte</option>
@@ -41,33 +40,32 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="documento" class="form-label">Número do Documento</label>
-                                    <input type="text" class="form-control" id="documento" placeholder="Digite o número" required>
+                                    <input type="text" class="form-control" id="form_pessoa_documento" placeholder="Digite o número" required>
                                 </div>
 
                                 <!-- Foto -->
                                 <div class="mb-3">
                                     <label for="foto" class="form-label">Foto</label>
-                                    <input class="form-control" type="file" id="foto" accept="image/*">
-                                    <img id="preview" alt="Pré-visualização da foto">
+                                    <input class="form-control" type="file" id="form_pessoa_foto" accept="image/*">
+                                    <img id="form_pessoa_foto_preview" alt="Pré-visualização da foto">
                                 </div>
 
                                 <!-- Redes sociais -->
                                 <div class="mb-3">
                                     <label for="redes" class="form-label">Redes Sociais</label>
-                                    <textarea class="form-control" id="redes" rows="3" placeholder="Cole aqui os links de suas redes sociais"></textarea>
+                                    <textarea class="form-control" id="form_pessoa_redes" rows="3" placeholder="Cole aqui os links de suas redes sociais"></textarea>
                                 </div>
 
                                 <!-- Curriculo -->
                                 <div class="mb-3">
                                     <label for="curriculo" class="form-label">Currículo</label>
-                                    <textarea class="form-control" id="curriculo" rows="3" placeholder="Cole aqui seu currículo"></textarea>
+                                    <textarea class="form-control" id="form_pessoa_curriculo" rows="3" placeholder="Cole aqui seu currículo"></textarea>
                                 </div>
-                                
+
                                 <!-- Botões -->
                                 <div class="d-flex flex-column align-items-center gap-2 mt-4">
                                     <div class="d-flex gap-2">
                                         <button onclick="pessoaSend()" type="submit" class="btn btn-secondary">Salvar</button>
-                                        <button onclick="pessoaKeySend()" type="submit" class="btn btn-secondary" style="margin-left: 5px" ;>Receber Chave</button>
                                     </div>
                                 </div>
                             </div>
@@ -81,22 +79,3 @@
 
 <?php require "../templates/footer.php" ?>
 <?php echo '<script src="' . $config["assets"] . 'js/call/cadastro-pessoa.js?v=1"></script>' ?>
- <script>
-    // Preview da foto
-    const fotoInput = document.getElementById('foto');
-    const preview = document.getElementById('preview');
-
-    fotoInput.addEventListener('change', () => {
-      const file = fotoInput.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = e => {
-          preview.src = e.target.result;
-          preview.style.display = "block";
-        };
-        reader.readAsDataURL(file);
-      } else {
-        preview.style.display = "none";
-      }
-    });
-  </script>
