@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="<?php echo $config["source"]?>">
         <?php echo '<img src="'.$config["assets"].'img/title.png">'?>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,13 +14,13 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro_usuario.php'?>">Usuário</a>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/usuario.php'?>">Usuário</a>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>              
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro_pessoa.php'?>">Dados Pessoais</a>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/pessoa.php'?>">Dados Pessoais</a>
               </li>              
               <li>
                 <hr class="dropdown-divider">
