@@ -1,7 +1,7 @@
   <!-- comum -->
   <?php echo '<script src="'.$config["assets"].'js/core/request.js?v=1"></script>'?>           
-  <?php echo '<script src="'.$config["assets"].'js/core/functions.js?v=1"></script>'?>           
-  <?php echo '<script src="'.$config["assets"].'js/core/public.js?v=2"></script>'?>  
+  <?php echo '<script src="'.$config["assets"].'js/core/functions.js?v=3"></script>'?>           
+  <?php echo '<script src="'.$config["assets"].'js/core/public.js?v=4"></script>'?>  
   
   <!-- vendor -->             
   <?php echo '<script src="'.$config["assets"].'vendor/jsdelivr/min.js?v=1"></script>'?>           
