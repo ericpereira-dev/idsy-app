@@ -20,7 +20,7 @@
                 <hr class="dropdown-divider">
               </li>              
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/pessoa.php'?>">Dados Pessoais</a>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/pessoa/'?>">Dados Pessoais</a>
               </li>              
               <li>
                 <hr class="dropdown-divider">

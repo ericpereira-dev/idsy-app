@@ -67,7 +67,7 @@ function updateScreen()
         document.getElementById('menu_login').style.display = 'block';         
 
         if ((window.location.href !== localStorage.getItem('source')+'login.php') && 
-            (window.location.href !== localStorage.getItem('source')+'cadastro_usuario.php'))
+            (window.location.href !== localStorage.getItem('source')+'cadastro/usuario.php'))
         {
             window.location.href = localStorage.getItem('source')+'login.php';            
         }
