@@ -33,9 +33,9 @@
                                 <div class="mb-3">
                                     <label for="tipoDocumento" class="form-label">Tipo de Documento</label>
                                     <select class="form-select" id="form_pessoa_tipo_documento" required>
-                                        <option value="cpf">CPF</option>
-                                        <option value="cnpj">CNPJ</option>
-                                        <option value="passaporte">Passaporte</option>
+                                        <option value="CPF">CPF</option>
+                                        <option value="CNPJ">CNPJ</option>
+                                        <option value="PASSAPORTE">Passaporte</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
@@ -53,13 +53,21 @@
                                 <!-- Redes sociais -->
                                 <div class="mb-3">
                                     <label for="redes" class="form-label">Redes Sociais</label>
-                                    <textarea class="form-control" id="form_pessoa_redes" rows="3" placeholder="Cole aqui os links de suas redes sociais"></textarea>
+                                    <textarea class="form-control" id="form_pessoa_redes_sociais" rows="3" placeholder="Cole aqui os links de suas redes sociais"></textarea>
                                 </div>
 
                                 <!-- Curriculo -->
                                 <div class="mb-3">
                                     <label for="curriculo" class="form-label">Currículo</label>
                                     <textarea class="form-control" id="form_pessoa_curriculo" rows="3" placeholder="Cole aqui seu currículo"></textarea>
+                                </div>
+
+                                <!-- Contato Publico -->
+                                <div class="mb-3">
+                                    <input class="form-check-input" type="checkbox" id="form_pessoa_contato_publico">
+                                    <label class="form-check-label" for="form_pessoa_contato_publico">
+                                        Contato Público
+                                    </label>
                                 </div>
 
                                 <!-- Botões -->
@@ -79,3 +87,4 @@
 
 <?php require "../../../templates/footer.php" ?>
 <?php echo '<script src="'.$config["assets"].'js/call/cadastro-pessoa.js?v=1"></script>' ?>
+
