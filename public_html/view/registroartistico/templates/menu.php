@@ -26,7 +26,7 @@
                 <hr class="dropdown-divider">
               </li>              
               <li onclick=controllerView()>
-                <a class="dropdown-item" href="#">Colecionador</a>
+<a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/colecionador/'?>">Colecionador</a>
               </li>
               <li>
                 <hr class="dropdown-divider">

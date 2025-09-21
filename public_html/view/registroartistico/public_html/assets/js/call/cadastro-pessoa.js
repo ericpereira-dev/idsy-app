@@ -43,11 +43,11 @@ function pessoaSend()
     requestedModel.authenticationData         = localStorage.getItem('token');
     requestedModel.privateDataType            = 'json';  
     requestedModel.privateData                = JSON.stringify(v_privateData); 
-    requestedModel.functionResponse           = pessoaResponse;   
+    requestedModel.functionResponse           = pessoaSendResponse;   
     request(requestedModel);
 }
 
-var pessoaResponse = function (e_request)
+var pessoaSendResponse = function (e_request)
 {   
     hideLoader();    
 
