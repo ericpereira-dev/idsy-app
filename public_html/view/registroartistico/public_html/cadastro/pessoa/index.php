@@ -86,5 +86,5 @@
 </body>
 
 <?php require "../../../templates/footer.php" ?>
-<?php echo '<script src="'.$config["assets"].'js/call/cadastro-pessoa.js?v=1"></script>' ?>
+<?php echo '<script src="'.$config["assets"].'js/call/cadastro-pessoa.js?v=2"></script>' ?>
 
