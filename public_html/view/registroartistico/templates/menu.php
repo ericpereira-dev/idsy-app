@@ -25,14 +25,14 @@
               <li>
                 <hr class="dropdown-divider">
               </li>              
-              <li onclick=controllerView()>
-<a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/colecionador/'?>">Colecionador</a>
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/colecionador/'?>">Colecionador</a>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>                            
-              <li onclick=teamView()>
-                <a class="dropdown-item" href="#">Artista</a>
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/artista/'?>">Artista</a>
               </li>             
             </ul>
           </li>           

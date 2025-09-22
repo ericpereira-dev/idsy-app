@@ -1,0 +1,23 @@
+#form_artista
+{
+    max-width: 600px;
+ } 
+
+#form_artista_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_artista_foto_preview
+{
+    display: none;
+    margin-top: 15px;
+    max-height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
