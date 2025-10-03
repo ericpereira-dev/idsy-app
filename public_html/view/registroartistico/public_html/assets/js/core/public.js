@@ -66,10 +66,10 @@ function updateScreen()
         document.getElementById('menu_exit').style.display = 'none';            
         document.getElementById('menu_login').style.display = 'block';         
 
-        if ((window.location.href !== localStorage.getItem('source')+'login/') && 
-            (window.location.href !== localStorage.getItem('source')+'cadastro/usuario/'))
+        if ((window.location.href !== localStorage.getItem('source')+'view/login/') && 
+            (window.location.href !== localStorage.getItem('source')+'view/cadastro/usuario/'))
         {
-            window.location.href = localStorage.getItem('source')+'login/';            
+            window.location.href = localStorage.getItem('source')+'view/login/';            
         }
         
         document.getElementById('central').style.display = 'block';  

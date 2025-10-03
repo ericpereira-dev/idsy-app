@@ -1,13 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() 
+{
+    // localStorage.setItem("form_active", document.getElementById('central'));     
+    // centralActive();
+    pessoaGet();
+});
+
 // Preview da foto
-
-    document.addEventListener("DOMContentLoaded", function() 
-    {
-        // localStorage.setItem("form_active", document.getElementById('central'));     
-        // centralActive();
-        pessoaGet();
-    });
-
-
 const fotoInput = document.getElementById('form_pessoa_foto');
 
 fotoInput.addEventListener('change', () => 

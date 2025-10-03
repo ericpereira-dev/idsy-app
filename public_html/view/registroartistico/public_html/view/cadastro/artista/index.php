@@ -1,10 +1,10 @@
-<?php require "../../../Config.php" ?>
-<?php require "../../../templates/header.php" ?>
+<?php require "../../../../Config.php" ?>
+<?php require "../../../../templates/header.php" ?>
 <?php echo '<link rel="stylesheet" href="'.$config["assets"].'css/cadastro-artista.css?v=1">' ?>
 
 <body>
-    <?php require "../../../templates/menu.php" ?>
-    <?php require "../../../templates/body.php" ?>
+    <?php require "../../../../templates/menu.php" ?>
+    <?php require "../../../../templates/body.php" ?>
     <div id="central">
         <div class="container">
             <div id="form_artista_center" class="row justify-content-center align-items-center">
@@ -46,6 +46,6 @@
     </div>
 </body>
 
-<?php require "../../../templates/footer.php" ?>
+<?php require "../../../../templates/footer.php" ?>
 <?php echo '<script src="'.$config["assets"].'js/call/cadastro-artista.js?v=2"></script>' ?>
 

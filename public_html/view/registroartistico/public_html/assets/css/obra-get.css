@@ -1,0 +1,53 @@
+#form_get
+{
+    max-width: 700px;
+ } 
+
+#form_get_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;    
+} 
+
+#form_obra_search_result
+{
+    max-width: 700px;
+} 
+
+#form_obra_search_result_center
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_obra_search
+{
+    max-width: 700px;
+} 
+
+#form_obra_search_center
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    /* margin-bottom: 15px;     */
+} 
+
+#form_obra_search_botao
+{
+    margin-top: 20px;
+} 
+
+#form_obra_search_check
+{
+    margin-top: 20px;
+}
+
+#form_obra_search_grupo_grip
+{
+    margin-top: 20px;    
+}
+
+

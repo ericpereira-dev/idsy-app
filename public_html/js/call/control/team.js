@@ -112,7 +112,7 @@ var teamLoad = function(id)
   var v_publiData = 
   {        
     id: id,      
-    name: '',
+    nome: '',
     fields: '0',
     orderBy:'',
     lines: '' 

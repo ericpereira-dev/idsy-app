@@ -14,52 +14,62 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/usuario/'?>">Usuário</a>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/cadastro/usuario/'?>">Usuário</a>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>              
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/pessoa/'?>">Dados Pessoais</a>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/cadastro/pessoa/'?>">Dados Pessoais</a>
               </li>              
               <li>
                 <hr class="dropdown-divider">
               </li>              
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/colecionador/'?>">Colecionador</a>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/cadastro/colecionador/'?>">Colecionador</a>
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>                            
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'cadastro/artista/'?>">Artista</a>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/cadastro/artista/'?>">Artista</a>
               </li>             
             </ul>
           </li>           
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Acervo
+              Obra(Só Artista)
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <li onclick=teamUserView()>
-                <a class="dropdown-item" href="#">Minhas Obras</a>
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/obra/set/'?>">Nova Obra</a>                
+              </li>
+            </ul>
+          </li>                                        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Acervo
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">                         
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/obra/set/'?>">Minhas Obras</a>                
               </li>
               <li>
                 <hr class="dropdown-divider">
-              </li>
-              <li onclick=teamControllerView()>
-                <a class="dropdown-item" href="#">Vendas Pendentes</a>
+              </li>                
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/obra/set/'?>">Transferir Obras</a>                
               </li>
               <li>
                 <hr class="dropdown-divider">
+              </li>                
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/obra/set/'?>">Receber Obras</a>                
               </li>                            
-              <li onclick=authorizationView()>
-                <a class="dropdown-item" href="#">Nova Obra(Só Artista)</a>
-              </li>
             </ul>
           </li>                              
           <li id="menu_login" class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo $config["source"].'login/'?>">Entrar</a>
+            <a class="nav-link active" aria-current="page" href="<?php echo $config["source"].'view/login/'?>">Entrar</a>
           </li>
           <li id="menu_exit" onclick=loginExit() class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Sair</a>

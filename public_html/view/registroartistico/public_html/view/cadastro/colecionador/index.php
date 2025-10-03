@@ -1,10 +1,10 @@
-<?php require "../../../Config.php" ?>
-<?php require "../../../templates/header.php" ?>
+<?php require "../../../../Config.php" ?>
+<?php require "../../../../templates/header.php" ?>
 <?php echo '<link rel="stylesheet" href="'.$config["assets"].'css/cadastro-colecionador.css?v=1">' ?>
 
 <body>
-    <?php require "../../../templates/menu.php" ?>
-    <?php require "../../../templates/body.php" ?>
+    <?php require "../../../../templates/menu.php" ?>
+    <?php require "../../../../templates/body.php" ?>
     <div id="central">
         <div class="container">
             <div id="form_colecionador_center" class="row justify-content-center align-items-center">
@@ -41,6 +41,6 @@
     </div>
 </body>
 
-<?php require "../../../templates/footer.php" ?>
+<?php require "../../../../templates/footer.php" ?>
 <?php echo '<script src="'.$config["assets"].'js/call/cadastro-colecionador.js?v=2"></script>' ?>
 

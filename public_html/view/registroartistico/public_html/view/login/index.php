@@ -1,10 +1,10 @@
-<?php require "../../Config.php" ?>
-<?php require "../../templates/header.php" ?>
-<?php echo '<link rel="stylesheet" href="' . $config["assets"] . 'css/login.css?v=1">' ?>
+<?php require "../../../Config.php" ?>
+<?php require "../../../templates/header.php" ?>
+<?php echo '<link rel="stylesheet" href="'.$config["assets"].'css/login.css?v=1">' ?>
 
 <body>
-    <?php require "../../templates/menu.php" ?>
-    <?php require "../../templates/body.php" ?>
+    <?php require "../../../templates/menu.php" ?>
+    <?php require "../../../templates/body.php" ?>
     <div id="central">
         <div class="container">
             <div id="form_login_center" class="row justify-content-center align-items-center">
@@ -45,5 +45,5 @@
     </div>
 </body>
 
-<?php require "../../templates/footer.php" ?>
-<?php echo '<script src="' . $config["assets"] . 'js/call/login.js?v=1"></script>' ?>
+<?php require "../../../templates/footer.php" ?>
+<?php echo '<script src="'.$config["assets"].'js/call/login.js?v=1"></script>' ?>
