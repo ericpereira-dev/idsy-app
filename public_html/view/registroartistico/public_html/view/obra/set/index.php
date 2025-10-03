@@ -107,5 +107,5 @@
 </body>
 
 <?php require "../../../../templates/footer.php" ?>
-<?php echo '<script src="'.$config["assets"].'js/call/obra-set.js?v=2"></script>' ?>
+<?php echo '<script src="'.$config["assets"].'js/call/obra-set.js?v=3"></script>' ?>
 
