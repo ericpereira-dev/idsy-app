@@ -40,7 +40,7 @@ fotoInput3.addEventListener('change', () =>
 
 function obraSend(deleted)
 {
-    showLoader(); 
+    showLoader();     
 
     var v_privateData = 
     {        
@@ -161,26 +161,29 @@ var obraGetResponse = function (e_request)
         document.getElementById("form_set_descricao_material").value = v_result[0].obra.descricao_material;
         document.getElementById("form_set_descricao_poetica").value = v_result[0].obra.descricao_poetica;
 
-        if (v_result[0].img[0] !== "") {
+        if (v_result[0].img[0] !== "" && Array.isArray(v_result[0].img) && v_result[0].img.length > 0) {
             document.getElementById("form_set_foto1_preview").src = v_result[0].img[0];
             document.getElementById("form_set_foto1_preview").style.display = "block";
         } else {
+            document.getElementById("form_set_foto1_preview").src = '';             
             document.getElementById("form_set_foto1_preview").style.display = "none";
         }
 
-        if (v_result[0].img[1] !== "") {
+        if (v_result[0].img[1] !== "" && Array.isArray(v_result[0].img) && v_result[0].img.length > 1) {
             document.getElementById("form_set_foto2_preview").src = v_result[0].img[1];
             document.getElementById("form_set_foto2_preview").style.display = "block";
         } else {
+            document.getElementById("form_set_foto2_preview").src = '';             
             document.getElementById("form_set_foto2_preview").style.display = "none";
         }
 
-        if (v_result[0].img[2] !== "") {
+       if (v_result[0].img[2] !== "" && Array.isArray(v_result[0].img) && v_result[0].img.length > 2) {
             document.getElementById("form_set_foto3_preview").src = v_result[0].img[2];
             document.getElementById("form_set_foto3_preview").style.display = "block";
         } else {
+            document.getElementById("form_set_foto3_preview").src = '';             
             document.getElementById("form_set_foto3_preview").style.display = "none";
-        }
+        }        
 
         if (v_result[0].obra.qrcode !== "") {
             document.getElementById("form_set_qrcode_preview").src = v_result[0].obra.qrcode;
@@ -197,11 +200,15 @@ function obraClear()
     document.getElementById("form_set_nome").value ='';
     document.getElementById("form_set_inicio_producao_data").value = '';
     document.getElementById("form_set_fim_producao_data").value = '';
-    document.getElementById("form_set_categoria").value = '';
+    document.getElementById("form_set_categoria").value = 'Tela';
     document.getElementById("form_set_descricao_material").value = '';
     document.getElementById("form_set_descricao_poetica").value = '';
     document.getElementById("form_set_foto1_preview").style.display = "none";
+    document.getElementById("form_set_foto1_preview").src = "";
     document.getElementById("form_set_foto2_preview").style.display = "none";
+    document.getElementById("form_set_foto2_preview").src = "";
     document.getElementById("form_set_foto3_preview").style.display = "none";
+    document.getElementById("form_set_foto3_preview").src = "";
     document.getElementById("form_set_qrcode_preview").style.display = "none";
+    document.getElementById("form_set_qrcode_preview").src = "";
 }
