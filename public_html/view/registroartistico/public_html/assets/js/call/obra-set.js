@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (v_dados.action == 'get')
         {
             obraGet(v_dados.data);
+            localStorage.removeItem('transf');
         }
     }
 });
