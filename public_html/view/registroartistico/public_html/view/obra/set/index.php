@@ -50,8 +50,19 @@
                                 <div class="mb-3">
                                     <label for="categoria" class="form-label">Categoria</label>
                                     <select class="form-select" id="form_set_categoria" required>
-                                        <option value="Tela">Tela</option>
+                                        <option value="Arte Digital">Arte Digital</option>    
+                                        <option value="Colagem">Colagem</option>
+                                        <option value="Desenho">Desenho</option>
                                         <option value="Escultura">Escultura</option>
+                                        <option value="Fotografia">Fotografia</option>
+                                        <option value="Gravura">Gravura</option>
+                                        <option value="Instalação">Instalação</option>
+                                        <option value="Livro de Artista">Livro de Artista</option>                                                                                
+                                        <option value="Objeto">Objeto</option>
+                                        <option value="Pintura">Pintura</option>
+                                        <option value="Tela">Tela</option>
+                                        <option value="Têxtil">Têxtil</option>                                        
+                                        <option value="Outros">Outros</option>
                                     </select>
                                 </div>
 
