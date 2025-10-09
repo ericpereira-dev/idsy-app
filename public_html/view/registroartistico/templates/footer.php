@@ -1,6 +1,6 @@
   <!-- comum -->
   <?php echo '<script src="'.$config["assets"].'js/core/request.js?v=1"></script>'?>           
-  <?php echo '<script src="'.$config["assets"].'js/core/functions.js?v=4"></script>'?>           
+  <?php echo '<script src="'.$config["assets"].'js/core/functions.js?v=5"></script>'?>           
   <?php echo '<script src="'.$config["assets"].'js/core/public.js?v=5"></script>'?>  
   
   <!-- vendor -->             
