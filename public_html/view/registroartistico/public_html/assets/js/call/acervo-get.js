@@ -8,7 +8,7 @@ function acervoGet() {
 
   var v_publiData =
   {
-    id_acervo: 0,
+    id_obra: 0,
     nome: document.getElementById("form_get_nome").value,
     categoria: '',
     fields: '1',
@@ -20,7 +20,7 @@ function acervoGet() {
   const requestedModel = new RequestedModel();
   requestedModel.device = getBrowserId();
   requestedModel.url = localStorage.getItem('api');
-  requestedModel.controller = 'REGISTRO_ARTISTICO_OBRA';
+  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO';
   requestedModel.method = 'GET';
   requestedModel.publicDataType = 'json';
   requestedModel.publicData = JSON.stringify(v_publiData);
@@ -49,7 +49,7 @@ var acervoGetResponse = function (e_request) {
       v_record = v_record + 1;
       v_view = v_view + '<tr>';
       v_view = v_view + '<td class="hidden-xs">' + v_data[i].id + '</td>';
-      v_view = v_view + '<td>' + v_data[i].nome + '</td>';
+      v_view = v_view + '<td>' + v_data[i].obra_nome + '</td>';
       v_view = v_view + '<td align="center">';
       v_view = v_view + '<button onclick="acervoLoad(' + v_data[i].id + ')" type="submit" class="btn btn-success">Load</button>';
       v_view = v_view + '</td></tr>';

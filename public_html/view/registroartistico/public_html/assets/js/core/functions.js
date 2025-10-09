@@ -128,6 +128,24 @@ function toLimit(string, caracteres) {
     return string.substring(0, caracteres);
 }
 
+function formatarMoeda(e_imput) {
+    const v_input = document.getElementById(e_imput);
+    let valor = v_input.value.replace(/\D/g, ''); // Remove tudo que não for número
+    valor = (valor / 100).toFixed(2) + ''; // Divide por 100 e adiciona duas casas decimais
+    valor = valor.replace('.', ','); // Troca ponto por vírgula
+
+    // Adiciona separadores de milhar
+    valor = valor.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    v_input.value = 'R$ ' + valor;
+}
+
+function formatarReal(valor) {
+  return valor.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+  });
+}
+
 function resizeImage(e_fotoInput, e_preview, e_maxWidth = 200) {
     const v_input = document.getElementById(e_fotoInput);
     const v_preview = document.getElementById(e_preview);

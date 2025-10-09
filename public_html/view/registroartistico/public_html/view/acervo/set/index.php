@@ -26,62 +26,92 @@
                                 <div class="mb-3">
                                     <label for="id" class="form-label">ID</label>
                                     <input type="text" class="form-control" id="form_set_id" placeholder="" disabled>
-                                </div>                             
-
-                                <!-- Descricao -->
+                                </div>    
+                                
+                                <!-- Nome -->
                                 <div class="mb-3">
-                                    <label for="descricao" class="form-label">Descricao</label>
-                                    <input type="text" class="form-control" id="form_set_descricao" placeholder="Digite a descrição da obra" required>
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="form_set_nome" placeholder="" disabled>
                                 </div>
-
-                                <!-- Data de Início da Produção -->
-                                <div class="mb-3">
-                                    <label for="valor_venda" class="form-label">Valor para Venda</label>
-                                    <input type="text" class="form-control" id="form_set_valor_venda" required>
-                                </div>
-
 
                                 <!-- Categoria -->
                                 <div class="mb-3">
                                     <label for="categoria" class="form-label">Categoria</label>
-                                    <select class="form-select" id="form_set_categoria" required>
-                                        <option value="Arte Digital">Arte Digital</option>    
-                                        <option value="Colagem">Colagem</option>
-                                        <option value="Desenho">Desenho</option>
-                                        <option value="Escultura">Escultura</option>
-                                        <option value="Fotografia">Fotografia</option>
-                                        <option value="Gravura">Gravura</option>
-                                        <option value="Instalação">Instalação</option>
-                                        <option value="Livro de Artista">Livro de Artista</option>                                                                                
-                                        <option value="Objeto">Objeto</option>
-                                        <option value="Pintura">Pintura</option>
-                                        <option value="Tela">Tela</option>
-                                        <option value="Têxtil">Têxtil</option>                                        
-                                        <option value="Outros">Outros</option>
-                                    </select>
+                                    <input type="text" class="form-control" id="form_set_categoria" placeholder="" disabled>
+                                </div>       
+                                
+                                <!-- Descrição Material -->
+                                <div class="mb-3">
+                                    <label for="descricao_material" class="form-label">Descrição Material</label>
+                                    <textarea class="form-control" id="form_set_descricao_material" rows="3" placeholder="" disabled></textarea>
+                                </div>                                
+
+                                <!-- Descrição Poética -->
+                                <div class="mb-3">
+                                    <label for="descricao_poetica" class="form-label">Descrição Poética</label>
+                                    <textarea class="form-control" id="form_set_descricao_poetica" rows="3" placeholder="" disabled></textarea>
+                                </div>                                
+
+                                <!-- Data de Início da Produção -->
+                                <div class="mb-3">
+                                    <label for="dataInicioProducao" class="form-label">Data de Início da Produção</label>
+                                    <input type="date" class="form-control" id="form_set_inicio_producao_data" disabled>
                                 </div>
+
+                                <!-- Data de Fim da Produção -->
+                                <div class="mb-3">
+                                    <label for="dataFimProducao" class="form-label">Data de Fim da Produção</label>
+                                    <input type="date" class="form-control" id="form_set_fim_producao_data" disabled>
+                                </div>                                
 
                                 <!-- Descrição Material -->
                                 <div class="mb-3">
                                     <label for="descricao_material" class="form-label">Descrição Material</label>
-                                    <textarea class="form-control" id="form_set_descricao_material" rows="3" placeholder="Cole aqui sua descrição material"></textarea>
+                                    <textarea class="form-control" id="form_set_descricao_acervo" rows="3" placeholder="Cole aqui a sua descrição do material"></textarea>
+                                </div>   
+
+                                <!-- Valor para venda -->
+                                <div class="mb-3">
+                                    <label for="valor_venda" class="form-label">Valor para Venda</label>
+                                    <input type="text" class="form-control" id="form_set_valor_venda" placeholder="R$ 0,00" required>
+                                </div>
+
+                                <!-- Foto 1 -->
+                                <div class="mb-3">
+                                    <img id="form_set_foto1_preview" alt="Pré-visualização da foto 1">
+                                </div>
+
+                                <!-- Foto 2 -->
+                                <div class="mb-3">
+                                    <img id="form_set_foto2_preview" alt="Pré-visualização da foto 2">
+                                </div>
+
+                                <!-- Foto 3 -->
+                                <div class="mb-3">
+                                    <img id="form_set_foto3_preview" alt="Pré-visualização da foto 3">
                                 </div>                                
 
                                 <!-- Avenda -->
                                 <div class="mb-3">
                                     <input class="form-check-input" type="checkbox" id="form_acervo_avenda">
                                     <label class="form-check-label" for="form_avenda">
-                                        Avenda
+                                        À Venda
                                     </label>
                                 </div>
+
+                                <!-- bloquear -->
+                                <div class="mb-3">
+                                    <input class="form-check-input" type="checkbox" id="form_acervo_bloquear">
+                                    <label class="form-check-label" for="form_avenda">
+                                        Bloquear
+                                    </label>
+                                </div>                                
 
                                 <!-- Botões -->
                                 <div class="d-flex flex-column align-items-center gap-2 mt-4">
                                     <div class="d-flex gap-2">
-                                        <button onclick="acervoSend('F')" type="submit" class="btn btn-secondary">Salvar</button>
-                                        <button onclick="acervoClear()" type="button" class="btn btn-secondary">Limpar</button>
+                                        <button onclick="acervoSend()" type="submit" class="btn btn-secondary">Salvar</button>
                                         <button onclick="window.location.href='<?php echo $config["source"].'view/acervo/get/'?>'" type="submit" class="btn btn-secondary">Pesquisar</button>
-                                        <button onclick="acervoSend('T')" type="submit" class="btn btn-danger">Excluir</button>
                                     </div>
                                 </div>
                             </div>
