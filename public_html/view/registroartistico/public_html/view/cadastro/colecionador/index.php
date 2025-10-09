@@ -17,6 +17,11 @@
                                 </div>
                             </div>
                             <div class="form-row">
+                                <!-- ID -->
+                                <div class="mb-3">
+                                    <label for="id" class="form-label">ID</label>
+                                    <input type="text" class="form-control" id="form_colecionador_id" placeholder="" disabled>
+                                </div>                                
 
                                 <!-- Ativo -->
                                 <div class="mb-3">
@@ -42,5 +47,5 @@
 </body>
 
 <?php require "../../../../templates/footer.php" ?>
-<?php echo '<script src="'.$config["assets"].'js/call/cadastro-colecionador.js?v=2"></script>' ?>
+<?php echo '<script src="'.$config["assets"].'js/call/cadastro-colecionador.js?v=3"></script>' ?>
 

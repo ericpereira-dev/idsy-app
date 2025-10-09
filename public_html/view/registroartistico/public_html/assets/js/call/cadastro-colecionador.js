@@ -66,7 +66,7 @@ function colecionadorGet()
 
 var colecionadorGetResponse = function (e_request)
 {   
-    hideLoader();    
+    hideLoader();        
 
     if (e_request.resultCode != 200)
     {
@@ -74,7 +74,8 @@ var colecionadorGetResponse = function (e_request)
     }
     else
     {           
-        var v_result = e_request.result;
-        document.getElementById("form_colecionador_ativo").checked = strToBool(v_result);
+        var v_result = JSON.parse(e_request.result);
+        document.getElementById("form_colecionador_id").value = v_result.id;
+        document.getElementById("form_colecionador_ativo").checked = strToBool(v_result.ativo);
     }
 }
