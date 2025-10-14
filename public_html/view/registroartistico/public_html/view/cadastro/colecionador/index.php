@@ -19,7 +19,7 @@
                             <div class="form-row">
                                 <!-- ID -->
                                 <div class="mb-3">
-                                    <label for="id" class="form-label">ID</label>
+                                    <label for="id" class="form-label">O "ID" é o seu número para receber novas obras</label>
                                     <input type="text" class="form-control" id="form_colecionador_id" placeholder="" disabled>
                                 </div>                                
 
