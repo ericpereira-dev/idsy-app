@@ -108,9 +108,9 @@ var acervoGetResponse = function (e_request) {
         document.getElementById("form_set_descricao_poetica").value = v_result[0].obra.descricao_poetica;
         document.getElementById("form_set_valor_venda").value = v_result[0].obra.valor_venda;
         formatarMoeda('form_set_valor_venda');
-        document.getElementById("form_set_descricao_acervo").value = v_result[0].obra.descricao;  
+        document.getElementById("form_set_descricao_acervo").value = v_result[0].obra.descricao;
         document.getElementById("form_acervo_avenda").checked = strToBool(v_result[0].obra.avenda);
-        document.getElementById("form_acervo_bloquear").checked = strToBool(v_result[0].obra.blocked);                              
+        document.getElementById("form_acervo_bloquear").checked = strToBool(v_result[0].obra.blocked);
 
         if (v_result[0].img[0] !== "" && Array.isArray(v_result[0].img) && v_result[0].img.length > 0) {
             document.getElementById("form_set_foto1_preview").src = v_result[0].img[0];
@@ -143,4 +143,13 @@ var acervoGetResponse = function (e_request) {
             document.getElementById("form_set_qrcode_preview").style.display = "none";
         }
     }
+}
+
+function acervoTransferir() {
+    var v_dados = {
+        action: 'get',
+        data: document.getElementById("form_set_id").value
+    }
+    localStorage.setItem('transf', JSON.stringify(v_dados));
+    window.location.href = window.location.origin + '/view/acervo/transferencia/set/';
 }

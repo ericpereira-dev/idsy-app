@@ -51,8 +51,10 @@ var acervoGetResponse = function (e_request) {
       v_view = v_view + '<td class="hidden-xs">' + v_data[i].id + '</td>';
       v_view = v_view + '<td>' + v_data[i].obra_nome + '</td>';
       v_view = v_view + '<td align="center">';
-      v_view = v_view + '<button onclick="acervoLoad(' + v_data[i].id + ')" type="submit" class="btn btn-success">Abrir</button>';
-      v_view = v_view + '</td></tr>';
+      v_view = v_view + '<button onclick="acervoLoad(' + v_data[i].id + ')" type="submit" class="btn btn-success">Enviar</button>';
+      v_view = v_view + '<td align="center">';
+      v_view = v_view + '<button onclick="acervoTransferencia(' + v_data[i].id + ')" type="submit" class="btn btn-success">Enviar</button>';
+      v_view = v_view + '</td></tr>';      
     }
 
     v_view =
@@ -70,7 +72,8 @@ var acervoGetResponse = function (e_request) {
       '<tr>' +
       '<th class="hidden-xs">ID</th>' +
       '<th>Nome</th>' +
-      '<th></th>' +
+      '<th>Visualizar</th>' +      
+      '<th>Transferir</th>' +            
       '</tr> ' +
       '</thead>' +
       '<tbody>' +
@@ -92,6 +95,15 @@ function acervoLoad(id) {
   }
   localStorage.setItem('transf', JSON.stringify(v_dados));
   window.location.href = window.location.origin + '/view/acervo/set/';
+}
+
+function acervoTransferencia(id) {
+  var v_dados = {
+    action: 'get',
+    data: id
+  }
+  localStorage.setItem('transf', JSON.stringify(v_dados));
+  window.location.href = window.location.origin + '/view/acervo/transferencia/set/';
 }
 
 function acervoVoltar() {

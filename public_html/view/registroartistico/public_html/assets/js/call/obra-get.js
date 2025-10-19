@@ -51,7 +51,7 @@ var obraGetResponse = function (e_request) {
       v_view = v_view + '<td class="hidden-xs">' + v_data[i].id + '</td>';
       v_view = v_view + '<td>' + v_data[i].nome + '</td>';
       v_view = v_view + '<td align="center">';
-      v_view = v_view + '<button onclick="obraLoad(' + v_data[i].id + ')" type="submit" class="btn btn-success">Abrir</button>';
+      v_view = v_view + '<button onclick="obraLoad(' + v_data[i].id + ')" type="submit" class="btn btn-success">Enviar</button>';
       v_view = v_view + '</td></tr>';
     }
 
@@ -70,7 +70,7 @@ var obraGetResponse = function (e_request) {
       '<tr>' +
       '<th class="hidden-xs">ID</th>' +
       '<th>Nome</th>' +
-      '<th></th>' +
+      '<th>Visualizar</th>' +
       '</tr> ' +
       '</thead>' +
       '<tbody>' +

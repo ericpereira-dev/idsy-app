@@ -42,4 +42,4 @@
 </body>
 
 <?php require "../../../../templates/footer.php" ?>
-<?php echo '<script src="' . $config["assets"] . 'js/call/obra-get.js?v=2"></script>' ?>
+<?php echo '<script src="' . $config["assets"] . 'js/call/obra-get.js?v=3"></script>' ?>

@@ -112,6 +112,7 @@
                                     <div class="d-flex gap-2">
                                         <button onclick="acervoSend()" type="submit" class="btn btn-secondary">Salvar</button>
                                         <button onclick="window.location.href='<?php echo $config["source"].'view/acervo/get/'?>'" type="submit" class="btn btn-secondary">Pesquisar</button>
+                                        <button onclick="acervoTransferir()" type="submit" class="btn btn-secondary">Transferir</button>                                        
                                     </div>
                                 </div>
                             </div>
@@ -124,5 +125,5 @@
 </body>
 
 <?php require "../../../../templates/footer.php" ?>
-<?php echo '<script src="'.$config["assets"].'js/call/acervo-set.js?v=3"></script>' ?>
+<?php echo '<script src="'.$config["assets"].'js/call/acervo-set.js?v=4"></script>' ?>
 
