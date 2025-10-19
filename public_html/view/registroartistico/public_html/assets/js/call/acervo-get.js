@@ -51,7 +51,7 @@ var acervoGetResponse = function (e_request) {
       v_view = v_view + '<td class="hidden-xs">' + v_data[i].id + '</td>';
       v_view = v_view + '<td>' + v_data[i].obra_nome + '</td>';
       v_view = v_view + '<td align="center">';
-      v_view = v_view + '<button onclick="acervoLoad(' + v_data[i].id + ')" type="submit" class="btn btn-success">Load</button>';
+      v_view = v_view + '<button onclick="acervoLoad(' + v_data[i].id + ')" type="submit" class="btn btn-success">Abrir</button>';
       v_view = v_view + '</td></tr>';
     }
 
@@ -91,7 +91,7 @@ function acervoLoad(id) {
     data: id
   }
   localStorage.setItem('transf', JSON.stringify(v_dados));
-  window.location.href = localStorage.getItem('form_before');
+  window.location.href = window.location.origin + '/view/acervo/set/';
 }
 
 function acervoVoltar() {

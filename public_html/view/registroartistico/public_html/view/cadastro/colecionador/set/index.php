@@ -1,10 +1,10 @@
-<?php require "../../../../Config.php" ?>
-<?php require "../../../../templates/header.php" ?>
-<?php echo '<link rel="stylesheet" href="'.$config["assets"].'css/cadastro-colecionador.css?v=1">' ?>
+<?php require "../../../../../Config.php" ?>
+<?php require "../../../../../templates/header.php" ?>
+<?php echo '<link rel="stylesheet" href="'.$config["assets"].'css/cadastro-colecionador-set.css?v=1">' ?>
 
 <body>
-    <?php require "../../../../templates/menu.php" ?>
-    <?php require "../../../../templates/body.php" ?>
+    <?php require "../../../../../templates/menu.php" ?>
+    <?php require "../../../../../templates/body.php" ?>
     <div id="central">
         <div class="container">
             <div id="form_colecionador_center" class="row justify-content-center align-items-center">
@@ -19,7 +19,7 @@
                             <div class="form-row">
                                 <!-- ID -->
                                 <div class="mb-3">
-                                    <label for="id" class="form-label">O "ID" é o seu número para receber novas obras</label>
+                                    <label for="id" class="form-label">O "ID" é o seu número para receber transferências de outros colecionadores</label>
                                     <input type="text" class="form-control" id="form_colecionador_id" placeholder="" disabled>
                                 </div>                                
 
@@ -46,6 +46,6 @@
     </div>
 </body>
 
-<?php require "../../../../templates/footer.php" ?>
-<?php echo '<script src="'.$config["assets"].'js/call/cadastro-colecionador.js?v=3"></script>' ?>
+<?php require "../../../../../templates/footer.php" ?>
+<?php echo '<script src="'.$config["assets"].'js/call/cadastro-colecionador-set.js?v=4"></script>' ?>
 

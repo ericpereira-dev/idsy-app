@@ -1,6 +1,6 @@
 <?php require "../../../../Config.php" ?>
 <?php require "../../../../templates/header.php" ?>
-<?php echo '<link rel="stylesheet" href="' . $config["assets"] . 'css/acervo-get.css?v=1">' ?>
+<?php echo '<link rel="stylesheet" href="' . $config["assets"] . 'css/cadastro-colecionador-get.css?v=1">' ?>
 
 <body>
     <?php require "../../../../templates/menu.php" ?>
@@ -13,21 +13,21 @@
                         <div class="card-body">
                             <div id="form_top">
                                 <div id="form_titulo">
-                                    <h5 class="card-title">Pesquisa da Obra do Acervo</h5>
+                                    <h5 class="card-title">Pesquisa da Obra</h5>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <!-- Nome -->
                                 <div class="mb-3">
                                     <label for="nome" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="form_get_nome" placeholder="Digite o nome da acervo" required>
+                                    <input type="text" class="form-control" id="form_get_nome" placeholder="Digite o nome da colecionador" required>
                                 </div>
 
                                 <!-- Botões -->
                                 <div class="d-flex flex-column align-items-center gap-2 mt-4">
                                     <div class="d-flex gap-2">
-                                        <button onclick="acervoGet()" type="submit" class="btn btn-secondary">Pesquisar</button>
-                                        <button onclick="acervoVoltar()" type="submit" class="btn btn-secondary">Voltar</button>                                        
+                                        <button onclick="colecionadorGet()" type="submit" class="btn btn-secondary">Pesquisar</button>
+                                        <button onclick="colecionadorVoltar()" type="submit" class="btn btn-secondary">Voltar</button>                                        
                                     </div>
                                 </div>
                             </div>
@@ -36,10 +36,10 @@
                 </div>
             </div>
         </div>
-        <div id="form_acervo_search_result_center" class="row justify-content-center align-items-center">
+        <div id="form_colecionador_search_result_center" class="row justify-content-center align-items-center">
         </div>
     </div>
 </body>
 
 <?php require "../../../../templates/footer.php" ?>
-<?php echo '<script src="' . $config["assets"] . 'js/call/acervo-get.js?v=4"></script>' ?>
+<?php echo '<script src="' . $config["assets"] . 'js/call/cadastro-colecionador-get.js?v=2"></script>' ?>

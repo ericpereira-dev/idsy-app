@@ -26,7 +26,7 @@
                 <hr class="dropdown-divider">
               </li>              
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/cadastro/colecionador/'?>">Colecionador</a>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/cadastro/colecionador/set/'?>">Colecionador</a>
               </li>
               <li>
                 <hr class="dropdown-divider">
@@ -52,13 +52,13 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">                         
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/set/'?>">Minhas Obras</a>                
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/get/'?>">Minhas Obras</a>                
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>                
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/set/'?>">Transferir Obras</a>                
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/transferencia/set/'?>">Transferir Obras</a>                
               </li>
               <li>
                 <hr class="dropdown-divider">

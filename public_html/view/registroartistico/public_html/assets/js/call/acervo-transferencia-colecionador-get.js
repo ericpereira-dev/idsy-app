@@ -3,14 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem('form_now', window.location.href);
 });
 
-function obraGet() {
+function colecionadorGet() {
   showLoader();
 
   var v_publiData =
   {
-    id_obra: 0,
-    nome: document.getElementById("form_get_nome").value,
-    categoria: '',
+    id: document.getElementById("form_get_id").value,
     fields: '1',
     orderBy: '',
     lines: ''
@@ -20,7 +18,7 @@ function obraGet() {
   const requestedModel = new RequestedModel();
   requestedModel.device = getBrowserId();
   requestedModel.url = localStorage.getItem('api');
-  requestedModel.controller = 'REGISTRO_ARTISTICO_OBRA';
+  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERENCIA_COLECIONADOR';
   requestedModel.method = 'GET';
   requestedModel.publicDataType = 'json';
   requestedModel.publicData = JSON.stringify(v_publiData);
@@ -28,14 +26,14 @@ function obraGet() {
   requestedModel.authenticationData = localStorage.getItem('token');
   requestedModel.privateDataType = 'json';
   requestedModel.privateData = '';
-  requestedModel.functionResponse = obraGetResponse;
+  requestedModel.functionResponse = colecionadorGetResponse;
   request(requestedModel);
 }
 
-var obraGetResponse = function (e_request) {
+var colecionadorGetResponse = function (e_request) {
   var v_view = "";
   var v_record = 0;
-  document.getElementById("form_obra_search_result_center").innerHTML = '';
+  document.getElementById("form_colecionador_search_result_center").innerHTML = '';
 
   hideLoader();
 
@@ -45,18 +43,17 @@ var obraGetResponse = function (e_request) {
   else {
     var v_data = JSON.parse(e_request.result);
 
-    for (var i = 0; i < v_data.length; i++) {
-      v_record = v_record + 1;
-      v_view = v_view + '<tr>';
-      v_view = v_view + '<td class="hidden-xs">' + v_data[i].id + '</td>';
-      v_view = v_view + '<td>' + v_data[i].nome + '</td>';
-      v_view = v_view + '<td align="center">';
-      v_view = v_view + '<button onclick="obraLoad(' + v_data[i].id + ')" type="submit" class="btn btn-success">Abrir</button>';
-      v_view = v_view + '</td></tr>';
-    }
+    v_record = v_record + 1;
+    v_view = v_view + '<tr>';
+    v_view = v_view + '<td class="hidden-xs">' + v_data.id + '</td>';
+    v_view = v_view + '<td>' + v_data.colecionador_nome + '</td>';
+    v_view = v_view + '<td align="center">';
+    v_view = v_view + '<button onclick="colecionadorLoad(' + v_data.id + ')" type="submit" class="btn btn-success">Abrir</button>';
+    v_view = v_view + '</td></tr>';
+
 
     v_view =
-      '<div id="form_obra_search_result">' +
+      '<div id="form_colecionador_search_result">' +
       '<div class="card bg-light pb-4" style="border-radius: 25px;">' +
       '<div class="card-body">' +
       '<div class="panel-body" >' +
@@ -81,19 +78,19 @@ var obraGetResponse = function (e_request) {
       '</div>' +
       '</div>' +
       '</div>';
-    document.getElementById("form_obra_search_result_center").innerHTML = v_view;
+    document.getElementById("form_colecionador_search_result_center").innerHTML = v_view;
   }
 }
 
-function obraLoad(id) {
+function colecionadorLoad(id) {
   var v_dados = {
-    action: 'get',
+    action: 'getColecionador',
     data: id
   }
   localStorage.setItem('transf', JSON.stringify(v_dados));
   window.location.href = localStorage.getItem('form_before');
 }
 
-function obraVoltar() {
+function colecionadorVoltar() {
   window.location.href = localStorage.getItem('form_before');
 }
