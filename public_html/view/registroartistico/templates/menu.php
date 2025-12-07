@@ -52,19 +52,19 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">                         
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/get/'?>">Minhas Obras</a>                
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/get/'?>">Meu Acervo</a>                
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>                
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/transferencia/set/'?>">Transferir Obras</a>                
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/transferencia/set/'?>">Transferir</a>                
               </li>
               <li>
                 <hr class="dropdown-divider">
               </li>                
               <li>
-                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/obra/set/'?>">Receber Obras</a>                
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/acervo/receber/get/'?>">Receber</a>                
               </li>                            
             </ul>
           </li>                              

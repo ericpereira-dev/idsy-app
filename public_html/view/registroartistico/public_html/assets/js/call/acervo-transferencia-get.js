@@ -20,7 +20,7 @@ function acervoTransferenciaGet() {
   const requestedModel = new RequestedModel();
   requestedModel.device = getBrowserId();
   requestedModel.url = localStorage.getItem('api');
-  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERENCIA';
+  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERIR';
   requestedModel.method = 'GET';
   requestedModel.publicDataType = 'json';
   requestedModel.publicData = JSON.stringify(v_publiData);

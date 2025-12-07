@@ -42,4 +42,4 @@
 </body>
 
 <?php require "../../../../../templates/footer.php" ?>
-<?php echo '<script src="' . $config["assets"] . 'js/call/acervo-transferencia-get.js?v=4"></script>' ?>
+<?php echo '<script src="' . $config["assets"] . 'js/call/acervo-transferencia-get.js?v=1"></script>' ?>

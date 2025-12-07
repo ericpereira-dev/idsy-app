@@ -51,7 +51,7 @@ function loginExit()
     localStorage.removeItem('token');
     document.getElementById('menu_exit').style.display = 'none';            
     document.getElementById('menu_login').style.display = 'block';
-    window.location.href = localStorage.getItem('source')+'login/';
+    window.location.href = localStorage.getItem('source')+'view/login/';
 }
 
 function updateScreen()

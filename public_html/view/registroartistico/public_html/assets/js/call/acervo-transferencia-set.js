@@ -58,7 +58,7 @@ function acervoTransferenciaSend(deleted) {
     const requestedModel = new RequestedModel();
     requestedModel.device = getBrowserId();
     requestedModel.url = localStorage.getItem('api');
-    requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERENCIA';
+    requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERIR';
     requestedModel.method = 'POST';
     requestedModel.publicDataType = 'json';
     requestedModel.publicData = '';
@@ -110,7 +110,7 @@ function acervoTransferenciaGet(id) {
   const requestedModel = new RequestedModel();
   requestedModel.device = getBrowserId();
   requestedModel.url = localStorage.getItem('api');
-  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERENCIA';
+  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERIR';
   requestedModel.method = 'GET';
   requestedModel.publicDataType = 'json';
   requestedModel.publicData = JSON.stringify(v_publiData);
@@ -214,7 +214,7 @@ function colecionadorGet(id) {
   const requestedModel = new RequestedModel();
   requestedModel.device = getBrowserId();
   requestedModel.url = localStorage.getItem('api');
-  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERENCIA_COLECIONADOR';
+  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERIR_COLECIONADOR';
   requestedModel.method = 'GET';
   requestedModel.publicDataType = 'json';
   requestedModel.publicData = JSON.stringify(v_publiData);

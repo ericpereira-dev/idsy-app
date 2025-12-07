@@ -67,5 +67,5 @@
 </body>
 
 <?php require "../../../../../templates/footer.php" ?>
-<?php echo '<script src="'.$config["assets"].'js/call/acervo-transferencia-set.js?v=7"></script>' ?>
+<?php echo '<script src="'.$config["assets"].'js/call/acervo-transferencia-set.js?v=2"></script>' ?>
 

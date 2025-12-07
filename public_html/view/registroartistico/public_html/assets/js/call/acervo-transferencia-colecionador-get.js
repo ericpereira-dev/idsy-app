@@ -18,7 +18,7 @@ function colecionadorGet() {
   const requestedModel = new RequestedModel();
   requestedModel.device = getBrowserId();
   requestedModel.url = localStorage.getItem('api');
-  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERENCIA_COLECIONADOR';
+  requestedModel.controller = 'REGISTRO_ARTISTICO_ACERVO_TRANSFERIR_COLECIONADOR';
   requestedModel.method = 'GET';
   requestedModel.publicDataType = 'json';
   requestedModel.publicData = JSON.stringify(v_publiData);
