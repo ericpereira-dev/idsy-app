@@ -35,7 +35,7 @@
                                     <button onclick="clientLoginSimpleSend()" type="submit" class="btn btn-secondary">Entrar</button>
                                     <button onclick="clientKeySimpleSend()" type="submit" class="btn btn-secondary">Receber Chave</button>
                                 </div>
-                                <a href="<?php echo $config["source"] . 'cadastro/usuario/' ?>" class="btn btn-link">Esqueceu a Senha ou Novo Usuário!</a>
+                                <a href="<?php echo $config["source"] . 'view/cadastro/usuario/' ?>" class="btn btn-link">Esqueceu a Senha ou Novo Usuário!</a>
                             </div>
                         </div>
                     </div>
