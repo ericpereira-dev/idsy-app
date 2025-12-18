@@ -91,7 +91,7 @@ function obraLoad(id) {
     data: id
   }
   localStorage.setItem('transf', JSON.stringify(v_dados));
-  window.location.href = localStorage.getItem('form_before');
+  window.location.href = window.location.origin + '/view/obra/set/';  
 }
 
 function obraVoltar() {

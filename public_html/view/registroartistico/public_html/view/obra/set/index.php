@@ -104,7 +104,6 @@
                                     <div class="d-flex gap-2">
                                         <button onclick="obraSend('F')" type="submit" class="btn btn-secondary">Salvar</button>
                                         <button onclick="obraClear()" type="button" class="btn btn-secondary">Limpar</button>
-                                        <button onclick="window.location.href='<?php echo $config["source"].'view/obra/get/'?>'" type="submit" class="btn btn-secondary">Pesquisar</button>
                                         <button onclick="obraSend('T')" type="submit" class="btn btn-danger">Excluir</button>
                                     </div>
                                 </div>

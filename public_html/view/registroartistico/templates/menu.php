@@ -44,6 +44,12 @@
               <li>
                 <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/obra/set/'?>">Nova Obra</a>                
               </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>                
+              <li>
+                <a class="dropdown-item" aria-current="page" href="<?php echo $config["source"].'view/obra/get/'?>">Pesquisar</a>                
+              </li>
             </ul>
           </li>                                        
           <li class="nav-item dropdown">

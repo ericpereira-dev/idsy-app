@@ -1,6 +1,6 @@
 #index
 {
-    width: 400px;                                  /*largura*/
+    width: 800px;                                  /*largura*/
     height: 113px;                                  /*altura*/    
     top: 0;
     bottom: 0;
@@ -12,7 +12,8 @@
 
 #form_index
 {
-    max-width: 400px;
+    max-width: 800px;
+
  } 
 
 #form_index_center

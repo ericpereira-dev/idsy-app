@@ -2,7 +2,7 @@
 
 <?php require "../templates/header.php" ?>
 
-<?php echo '<link rel="stylesheet" href="'.$config["assets"].'css/index.css?v=1">'?>  
+<?php echo '<link rel="stylesheet" href="'.$config["assets"].'css/index.css?v=3">'?>  
 <body>
   <?php require "../templates/menu.php" ?>
   <?php require "../templates/body.php" ?>
@@ -13,20 +13,46 @@
         <div id="form_index">
           <div class="card bg-light pb-4" style="border-radius: 25px;">
             <div class="card-body">
-              <h5 form_mensagem_titulo class="card-title">Bem-vindo(a) ao Sistema de Registro Artístico!</h5>
+              <h5 form_mensagem_titulo class="card-title">🎨Sistema de Registro Artístico!</h5>
               <div class="form-row">
                 <div class="form-group">
                   <div id="form_index_text">             
+                      Estamos felizes em ter você aqui.<br>
+                      Este sistema foi desenvolvido para registrar, proteger e gerenciar suas obras artísticas de forma segura, 
+                      prática e legalmente organizada. Aqui você pode formalizar a autoria de músicas, 
+                      artes visuais, textos, roteiros, códigos criativos e outros trabalhos autorais.<br><br>
 
-Este espaço foi criado para valorizar e proteger a sua arte.
-Aqui, você pode registrar suas criações de forma segura, prática e com validade legal.
+                      👉 Comece agora criando um registro<br>
+                      <a href="<?php echo $config["source"].'view/obra/set/'?>">
+                        Acessar novo registro
+                      </a><br><br>                   
 
-🎭 Seja você músico, escritor(a), ilustrador(a), cineasta ou qualquer outro tipo de criador, este sistema é o seu aliado na preservação dos seus direitos autorais.
-                         
+                      👉 Consulte obras já registradas<br>
+                      <a href="<?php echo $config["source"].'view/obra/get/'?>">
+                        Meus registros
+                      </a><br><br>                                 
+
+                      👉 Consulte o cadastro pessoal<br>
+                      <a href="<?php echo $config["source"].'view/cadastro/pessoa/'?>">
+                        Meu dados
+                      </a><br><br>                                 
+
+                      👉 Consulte o seu codigo de colecionador<br>
+                      <a href="<?php echo $config["source"].'view/cadastro/colecionador/set/'?>">
+                        Meu codigo
+                      </a><br><br>                                                       
+
+                      👉 Consulte o seu acervo<br>
+                      <a href="<?php echo $config["source"].'view/acervo/get/'?>">
+                        Meu acervo
+                      </a><br><br>  
+
+                      Todos os registros ficam associados à sua conta, com data, identificação única e histórico de alterações, 
+                      garantindo mais segurança jurídica para o autor.<br><br>
                   </div>
                 </div>
               </div>
-              <h5 form_mensagem_titulo class="card-title">Comece agora a registrar sua obra e fortaleça o seu legado artístico.</h5>              
+              <h5 form_mensagem_titulo class="card-title">Seja bem-vindo!!!<br></h5>              
             </div>
           </div>
         </div>

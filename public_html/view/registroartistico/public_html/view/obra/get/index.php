@@ -27,7 +27,6 @@
                                 <div class="d-flex flex-column align-items-center gap-2 mt-4">
                                     <div class="d-flex gap-2">
                                         <button onclick="obraGet()" type="submit" class="btn btn-secondary">Pesquisar</button>
-                                        <button onclick="obraVoltar()" type="submit" class="btn btn-secondary">Voltar</button>                                        
                                     </div>
                                 </div>
                             </div>
@@ -42,4 +41,4 @@
 </body>
 
 <?php require "../../../../templates/footer.php" ?>
-<?php echo '<script src="' . $config["assets"] . 'js/call/obra-get.js?v=3"></script>' ?>
+<?php echo '<script src="' . $config["assets"] . 'js/call/obra-get.js?v=5"></script>' ?>
